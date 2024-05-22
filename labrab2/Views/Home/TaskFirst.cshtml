@@ -1,0 +1,37 @@
+﻿<div align="center">
+    <form method="post">
+        <h3>Введите 3 числа</h3><br>
+        <p>
+            <label>Число 1:</label>
+            <input type="text" name="a" />
+        </p>
+        <p>
+            <label>Число 2:</label>
+            <input type="text" name="b" />
+        </p>
+        <p>
+            <label>Число 3:</label>
+            <input type="text" name="c" />
+        </p>
+        <p>
+            <input type="submit" value="Найти" />
+        </p>
+    </form>
+    <p>
+        <label>
+            Числа, которые принадлежат полуинтервалу (-3, 9]:
+        </label>
+        <label>
+            <p>
+                @if (ViewBag.Result != null)
+                {
+                    @foreach (var number in ViewBag.Result)
+                    {
+                        <text> @number; </text>
+                    }
+                }
+            </p>
+        </label>
+        <label> @ViewBag.E</label>
+    </p>
+</div>

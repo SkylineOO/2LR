@@ -1,0 +1,25 @@
+﻿<div align="center">
+    <form method="post">
+        <h3>Найти порядковый номер "я"</h3>
+        <p>
+            <label>Введите предложение:</label>
+            <input type="text" name="text1" />
+        </p>
+        <p>
+            <input type="submit" value="Найти" />
+        </p>
+    </form>
+    <label>@ViewBag.Text</label>
+    <p>
+        <label>
+            а) Порядковый номер первой "я" в предложении:
+        </label>
+        <label> @ViewBag.First</label>
+    </p>
+    <p>
+        <label>
+            б) Порядковый номер последней "я":
+        </label>
+        <label> @ViewBag.Last</label>
+    </p>
+</div>
